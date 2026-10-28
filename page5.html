@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเขียนเว็บพื้นฐาน</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #052a3a;
+            color: #ffffff;
+        }
+        .title-pill {
+            background-color: #cfe9ff;
+            color: #0b2a66;
+            border: 3px solid #7cc4ff;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .panel {
+            background-color: #06314d;
+            border: 2px solid #1fb6ff;
+            border-radius: 16px;
+        }
+        .num {
+            display: inline-block;
+            width: 40px; height: 40px; line-height: 36px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .cyan { color: #38d6ff; }
+        .green { color: #9be15d; }
+        .dice {
+            display: inline-block;
+            width: 64px; height: 64px; line-height: 64px;
+            background-color: #e0201b;
+            color: #ffffff;
+            border-radius: 12px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 4px;
+        }
+        .mini {
+            background-color: #094162;
+            border: 1px solid #38d6ff;
+            border-radius: 12px;
+            padding: 12px;
+            height: 100%;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Digital World</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a class="nav-link" href="page2.html">IoT</a></li>
+                <li class="nav-item"><a class="nav-link" href="page3.html">มารยาทไซเบอร์</a></li>
+                <li class="nav-item"><a class="nav-link" href="page4.html">Cloud Storage</a></li>
+                <li class="nav-item"><a class="nav-link active" href="page5.html">เขียนเว็บพื้นฐาน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-4">
+        <div class="title-pill text-center py-2 mb-4 mx-auto" style="max-width: 640px;">
+            <h1 class="mb-0">การเขียนเว็บพื้นฐาน</h1>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <h4><span class="num">1</span>3 เสาหลักของการสร้างเว็บ <small>(The Big 3 Trio)</small></h4>
+                <div class="panel p-3">
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <div class="mini">
+                                <b class="green">HTML (Structure - โครงสร้าง)</b><br>
+                                เปรียบเหมือน "เสา" ของบ้าน ใช้ใส่ข้อความ รูปภาพ ปุ่มกด และจัดลำดับเนื้อหา
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mini">
+                                <b class="green">CSS (Style - การตกแต่ง)</b><br>
+                                เปรียบเหมือน "เสื้อผ้าและสีทาบ้าน" ใช้ตกแต่งใส่สี ปรับฟอนต์ จัดขนาด และวางเลย์เอาต์ให้สวยงาม
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="cyan">Bootstrap - กล่องเลโก้สำเร็จรูป</h5>
+                    <p class="small">
+                        เครื่องมือช่วยสร้างเว็บที่เปรียบเหมือนตัวต่อสำเร็จรูป มีปุ่ม เมนู และการ์ดให้หยิบมาใช้ได้ทันที
+                        โดยไม่ต้องเขียน CSS เองตั้งแต่ต้น<br>
+                        รองรับทุกหน้าจอ (Responsive): แสดงผลสวยงามบนมือถือ แท็บเล็ต และคอมพิวเตอร์
+                    </p>
+
+                    <h6 class="cyan">Bootstrap Details</h6>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="mini">
+                                <b>Grid System</b><br>
+                                (1-12) ช่วยจัดวางเนื้อหา และรูปภาพให้เป็นระเบียบ
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mini">
+                                <b>Components</b><br>
+                                Navbar, Cards, Buttons ใช้ทำเมนูนำทาง กล่อง และปุ่มกดสีสันต่างๆ ได้อย่างรวดเร็ว
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mini">
+                                <b>การเรียกใช้ด้วย CDN</b><br>
+                                นำมาใช้งานได้ง่ายๆ เพียงก๊อปปี้ลิงก์ของ Bootstrap มาวางในโค้ด HTML
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><span class="num">2</span>แท็ก HTML พื้นฐานที่ต้องรู้</h4>
+                <p class="small">แท็กที่ใช้บ่อยที่สุด ส่วนใหญ่มีแท็กเปิด-ปิด &lt;tag&gt;...&lt;/tag&gt;</p>
+                <div class="panel p-2">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>แท็ก</th>
+                                <th>หน้าที่</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="green">&lt;h1&gt; ถึง &lt;h6&gt;</td>
+                            <td>สำหรับทำหัวข้อข่าวหรือหัวเรื่อง (Heading)</td>
+                        </tr>
+                        <tr>
+                            <td class="green">&lt;p&gt;</td>
+                            <td>สำหรับพิมพ์ข้อความเนื้อหาทั่วไป (Paragraph)</td>
+                        </tr>
+                        <tr>
+                            <td class="green">&lt;img src="..."&gt;</td>
+                            <td>สำหรับใส่รูปภาพบนหน้าเว็บ (Image)</td>
+                        </tr>
+                        <tr>
+                            <td class="green">&lt;a href="..."&gt;</td>
+                            <td>สำหรับทำลิงก์เชื่อมโยงไปหน้าอื่น (Hyperlink)</td>
+                        </tr>
+                        <tr>
+                            <td class="green">&lt;button&gt;</td>
+                            <td>
+                                สำหรับสร้างปุ่มกด (Button)<br>
+                                <button type="button" class="btn btn-primary btn-sm mt-1">Learn More</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><span class="num">3</span>เคล็ดลับการแต่งเว็บด้วย CSS สไตล์มินิมอล</h4>
+                <div class="panel p-3">
+                    <h6 class="cyan">Color &amp; Background</h6>
+                    <p class="small">การใส่สีข้อความ <b>color: blue;</b> และสีพื้นหลัง <b>background-color: #f0f0f0;</b></p>
+
+                    <h6 class="cyan">Font Styling</h6>
+                    <p class="small">การเปลี่ยนฟอนต์ <b>font-family</b> และปรับขนาดตัวอักษร <b>font-size</b></p>
+
+                    <h6 class="cyan">Spacing</h6>
+                    <p class="small mb-0">การจัดระยะห่างขอบและช่องไฟด้วย <b>margin</b> และ <b>padding</b></p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><span class="num">4</span>เครื่องมือลงมือทำจริง <small>(Beginner Tools)</small></h4>
+                <div class="panel p-3">
+                    <h6 class="cyan">Code Editor แนะนำ</h6>
+                    <p class="small mb-2">
+                        <b class="green">• Online</b><br>
+                        Replit, CodePen, JSFiddle (เปิดเว็บแล้วพิมพ์โค้ดทดลองได้ทันที)
+                    </p>
+                    <p class="small mb-3">
+                        <b class="green">• Offline</b><br>
+                        Visual Studio Code (VS Code) หรือ Notepad++
+                    </p>
+                    <h6 class="cyan">การดูโค้ดหลังบ้าน</h6>
+                    <p class="small">
+                        เทคนิคกดคลิกขวาที่หน้าเว็บใดก็ได้ แล้วเลือก "Inspect" (ตรวจสอบ)
+                        เพื่อดูโค้ด HTML/CSS จริงของเว็บนั้นๆ
+                    </p>
+                    <h6 class="cyan mt-3">ฝึกเพิ่มเติม</h6>
+                    <p class="small mb-0">
+                        <a href="https://www.w3schools.com/" target="_blank" class="link-info">W3Schools</a>
+                        มีบทเรียนและแบบฝึกหัด HTML, CSS, Bootstrap ให้ลองทำฟรี
+                    </p>
+                </div>
+
+                <div class="text-center mt-3">
+                    <span class="dice">H</span><span class="dice">T</span><span class="dice">M</span><span class="dice">L</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="page4.html" class="btn btn-outline-info me-2">← หน้าก่อนหน้า</a>
+            <a href="index.html" class="btn btn-outline-info">กลับหน้าแรก</a>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-4">
+        <p class="mb-1">&copy; Copyright Assumption College</p>
+        <p class="mb-0">ออกแบบโดย ธนัชญ์พงศ์ และ กันติพัส ม.2/7</p>
+    </footer>
+</body>
+</html>

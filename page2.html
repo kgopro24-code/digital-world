@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT ในชีวิตประจำวัน</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #061a3a;
+            color: #ffffff;
+        }
+        .title-pill {
+            background-color: #cfe9ff;
+            color: #0b2a66;
+            border: 3px solid #7cc4ff;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .panel {
+            background-color: #082651;
+            border: 2px solid #1fb6ff;
+            border-radius: 16px;
+            height: 100%;
+        }
+        .num {
+            display: inline-block;
+            width: 40px; height: 40px; line-height: 36px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .cyan { color: #38d6ff; }
+        .formula-sign { font-size: 2rem; font-weight: bold; }
+        .example {
+            background-color: #0b3766;
+            border: 1px solid #38d6ff;
+            border-radius: 12px;
+            padding: 12px;
+            height: 100%;
+        }
+        .example ul { margin-bottom: 0; padding-left: 18px; font-size: 0.9rem; }
+        .step {
+            border-left: 3px solid #38d6ff;
+            padding-left: 12px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Digital World</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a class="nav-link active" href="page2.html">IoT</a></li>
+                <li class="nav-item"><a class="nav-link" href="page3.html">มารยาทไซเบอร์</a></li>
+                <li class="nav-item"><a class="nav-link" href="page4.html">Cloud Storage</a></li>
+                <li class="nav-item"><a class="nav-link" href="page5.html">เขียนเว็บพื้นฐาน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-4">
+        <div class="title-pill text-center py-2 mb-4 mx-auto" style="max-width: 640px;">
+            <h1 class="mb-0">IoT ในชีวิตประจำวัน</h1>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <h2 class="mb-3">เรียนรู้ <span class="cyan">IoT</span> ง่ายๆ</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h4><span class="num">1</span>IoT คืออะไร?</h4>
+                        <div class="panel p-3">
+                            <div class="bg-primary mb-3 text-center">
+                                อุปกรณ์มีสมองและมีไลน์กลุ่ม<br>คุยกันและทำงานแทนเราได้
+                            </div>
+
+                            <div class="row text-center align-items-center g-1">
+                                <div class="col-3">
+                                    <b>เซนเซอร์</b><br><small>(ตรวจจับ)</small>
+                                </div>
+                                <div class="col-1 formula-sign">+</div>
+                                <div class="col-3">
+                                    <b>อินเทอร์เน็ต</b><br><small>(ส่งข้อมูล)</small>
+                                </div>
+                                <div class="col-1 formula-sign">+</div>
+                                <div class="col-3">
+                                    <b>ระบบสั่งการ</b><br><small>(ทำงาน)</small>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <span class="formula-sign">= <span class="cyan">IoT</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4><span class="num">2</span>ตัวอย่าง IoT ใกล้ตัว</h4>
+                        <div class="panel p-3">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="example">
+                                        <b class="cyan">แอร์อัจฉริยะ</b>
+                                        <ul>
+                                            <li>สั่งงานผ่านแอป</li>
+                                            <li>ปรับอุณหภูมิอัตโนมัติ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="example">
+                                        <b class="cyan">ไฟและกลอนประตู</b>
+                                        <ul>
+                                            <li>ล็อกประตูผ่านมือถือ</li>
+                                            <li>เปิด-ปิดไฟอัตโนมัติ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="example">
+                                        <b class="cyan">Smartwatch</b>
+                                        <ul>
+                                            <li>นับก้าวเดิน</li>
+                                            <li>วัดอัตราการเต้นของหัวใจ</li>
+                                            <li>แจ้งเตือนเหตุฉุกเฉิน</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="example">
+                                        <b class="cyan">ระบบรดน้ำต้นไม้</b>
+                                        <ul>
+                                            <li>รดน้ำตามเวลาที่ตั้งไว้</li>
+                                            <li>วัดความชื้นในดินแล้วรดน้ำเอง</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h4><span class="num">3</span>แผนภาพไดอะแกรมการทำงาน</h4>
+                <div class="panel p-3 mb-4" style="height: auto;">
+                    <div class="step">
+                        <b class="cyan">1 Sensor</b><br>
+                        ตรวจจับความร้อน ความชื้น หรือการเคลื่อนไหว
+                    </div>
+                    <div class="step">
+                        <b class="cyan">2 Connectivity</b><br>
+                        ส่งข้อมูลผ่าน Wi-Fi/ Bluetooth/ 5G ขึ้นไปยัง cloud
+                    </div>
+                    <div class="step">
+                        <b class="cyan">3 Data Processing</b><br>
+                        ระบบวิเคราะห์ข้อมูลว่าต้องทำงานอย่างไร
+                    </div>
+                    <div class="step mb-0">
+                        <b class="cyan">4 Action</b><br>
+                        สั่งให้อุปกรณ์ทำงาน (เช่น พัดลมหมุน, เสียงดังเตือน)
+                    </div>
+                </div>
+
+                <h4><span class="num">4</span>ข้อดี &amp; ข้อควรระวัง</h4>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="card bg-dark border-success h-100">
+                            <div class="card-header bg-success text-white"><b>ข้อดี</b></div>
+                            <div class="card-body text-white small">
+                                สะดวกสบาย<br>
+                                ประหยัดพลังงาน<br>
+                                ช่วยดูแลความปลอดภัย
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark border-danger h-100">
+                            <div class="card-header bg-danger text-white"><b>ข้อควรระวัง</b></div>
+                            <div class="card-body text-white small">
+                                หากถูกแฮกอาจโดนแอบดูผ่านกล้อง หรือโดนขโมยข้อมูลส่วนตัว
+                                จึงควร<strong class="text-warning">ตั้งรหัสผ่านที่ปลอดภัยเสมอ</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-outline-info me-2">กลับหน้าแรก</a>
+            <a href="page3.html" class="btn btn-outline-info">หน้าถัดไป →</a>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-4">
+        <p class="mb-1">&copy; Copyright Assumption College</p>
+        <p class="mb-0">ออกแบบโดย ธนัชญ์พงศ์ และ กันติพัส ม.2/7</p>
+    </footer>
+</body>
+</html>
